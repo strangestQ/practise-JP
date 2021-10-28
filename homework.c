@@ -2,110 +2,110 @@
 
 #include <stdio.h>
 
-//新明解C言語入門演習1-1
+//怴柧夝C尵岅擖栧墘廗1-1
 //int main()
 //{
 //
-//	printf("15から37を引いた値は%dです。\n", 15 - 37);
+//	printf("15偐傜37傪堷偄偨抣偼%d偱偡丅\n", 15 - 37);
 //	return 0;
 //}
-//新明解C言語入門演習1-2
+//怴柧夝C尵岅擖栧墘廗1-2
 //int main()
 //{
-//	printf("守\n破\n離\n");
+//	printf("庣\n攋\n棧\n");
 //	return 0;
 //}
-//新明解C言語入門演習1-3
+//怴柧夝C尵岅擖栧墘廗1-3
 //int main()
 //{
-//	printf("こんにちは。\nお元気ですか。\n\nさようなら。\n");
+//	printf("偙傫偵偪偼丅\n偍尦婥偱偡偐丅\n\n偝傛偆側傜丅\n");
 //
 //	return 0;
 //}
-//新明解C言語入門演習1-4
+//怴柧夝C尵岅擖栧墘廗1-4
 //int main()
 //{
 //	int x = 3.14;
-//	printf("xの値は%dで。\n", x);
+//	printf("x偺抣偼%d偱丅\n", x);
 //	return 0;
 //}
-//新明解C言語入門演習1-5
+//怴柧夝C尵岅擖栧墘廗1-5
 //int main()
 //{
 //	int no;
-//	printf("整数を入力してください：");
+//	printf("惍悢傪擖椡偟偰偔偩偝偄丗");
 //	scanf("%d",&no);
-//	printf("%dに13を加えると%dです。\n", no, no + 13);
+//	printf("%d偵13傪壛偊傞偲%d偱偡丅\n", no, no + 13);
 //	return 0;
 //}
-//新明解C言語入門演習1-6
+//怴柧夝C尵岅擖栧墘廗1-6
 //int main()
 //{
 //	int no;
-//	printf("整数を入力してください：");
+//	printf("惍悢傪擖椡偟偰偔偩偝偄丗");
 //	scanf("%d",&no);
-//	printf("%dから7減じると%dです。\n", no, no - 7);
+//	printf("%d偐傜7尭偠傞偲%d偱偡丅\n", no, no - 7);
 //	return 0;
 //}
-//新明解C言語入門演習1-7
+//怴柧夝C尵岅擖栧墘廗1-7
 //int main()
 //{
-//	puts("守");
-//	puts("破");
-//	puts("離");
+//	puts("庣");
+//	puts("攋");
+//	puts("棧");
 //	return 0;
 //}
-//新明解C言語入門演習1-8
+//怴柧夝C尵岅擖栧墘廗1-8
 //int main()
 //{
 //	int n1, n2;
-//	puts("二つの整数を入力してください。");
-//	printf("整数n1:"); scanf("%d", &n1);
-//	printf("整数n2:"); scanf("%d", &n2);
-//	printf("それらの積は%dです。\n", n1 * n2);
+//	puts("擇偮偺惍悢傪擖椡偟偰偔偩偝偄丅");
+//	printf("惍悢n1:"); scanf("%d", &n1);
+//	printf("惍悢n2:"); scanf("%d", &n2);
+//	printf("偦傟傜偺愊偼%d偱偡丅\n", n1 * n2);
 //	return 0;
 //}
-//新明解C言語入門演習1-9
+//怴柧夝C尵岅擖栧墘廗1-9
 //int main()
 //{
 //	int n1, n2, n3;
-//	puts("三つの整数を入力してください。");
-//	printf("整数n1:"); scanf("%d", &n1);
-//	printf("整数n2:"); scanf("%d", &n2);
-//	printf("整数n3:"); scanf("%d", &n3);
-//	printf("それらの和は%dです。\n", n1 + n2 + n3);
+//	puts("嶰偮偺惍悢傪擖椡偟偰偔偩偝偄丅");
+//	printf("惍悢n1:"); scanf("%d", &n1);
+//	printf("惍悢n2:"); scanf("%d", &n2);
+//	printf("惍悢n3:"); scanf("%d", &n3);
+//	printf("偦傟傜偺榓偼%d偱偡丅\n", n1 + n2 + n3);
 //	return 0;
 //}
-//新明解C言語入門演習2-1
+//怴柧夝C尵岅擖栧墘廗2-1
 //int main()
 //{
 //	int x, y;
-//	puts("二つの整数を入力せよ。");
-//	printf("整数x:"); scanf("%d", &x);
-//	printf("整数y:"); scanf("%d", &y);
-//	printf("xの値はyの%d%%です。\n", 100 * x / y);
+//	puts("擇偮偺惍悢傪擖椡偣傛丅");
+//	printf("惍悢x:"); scanf("%d", &x);
+//	printf("惍悢y:"); scanf("%d", &y);
+//	printf("x偺抣偼y偺%d%%偱偡丅\n", 100 * x / y);
 //	return 0;
 //}
-//新明解C言語入門演習2-2
+//怴柧夝C尵岅擖栧墘廗2-2
 //int main()
 //{
 //	int a, b;
-//	puts("二つの整数を入力せよ。");
-//	printf("整数a:"); scanf("%d", &a);
-//	printf("整数b:"); scanf("%d", &b);
-//	printf("それらの和は%dで積は%dです。\n",a+b,a*b);
+//	puts("擇偮偺惍悢傪擖椡偣傛丅");
+//	printf("惍悢a:"); scanf("%d", &a);
+//	printf("惍悢b:"); scanf("%d", &b);
+//	printf("偦傟傜偺榓偼%d偱愊偼%d偱偡丅\n",a+b,a*b);
 //
 //	return 0;
 //}
-//新明解C言語入門演習2-3
+//怴柧夝C尵岅擖栧墘廗2-3
 //int main()
 //{
 //	double a;
-//	printf("実数を入力せよ:"); scanf("%lf", &a);
-//	printf("あなたは%fと入力しましたね。\n", a);
+//	printf("幚悢傪擖椡偣傛:"); scanf("%lf", &a);
+//	printf("偁側偨偼%f偲擖椡偟傑偟偨偹丅\n", a);
 //	return 0;
 //}
-//新明解C言語入門演習2-4
+//怴柧夝C尵岅擖栧墘廗2-4
 //int main()
 //{
 //	int a;
@@ -118,22 +118,281 @@
 //	printf("a/b=%f\n", a / b);
 //	return 0;
 //}
-//新明解C言語入門演習2-5
+//怴柧夝C尵岅擖栧墘廗2-5
 //int main()
 //{
 //	int x, y;
-//	puts("二つの整数を入力せよ。");
-//	printf("整数x:"); scanf("%d", &x);
-//	printf("整数y:"); scanf("%d", &y);
-//	printf("xの値はyの%f%%です。\n", (double)100 * x / y);
+//	puts("擇偮偺惍悢傪擖椡偣傛丅");
+//	printf("惍悢x:"); scanf("%d", &x);
+//	printf("惍悢y:"); scanf("%d", &y);
+//	printf("x偺抣偼y偺%f%%偱偡丅\n", (double)100 * x / y);
 //	return 0;
 //}
-//新明解C言語入門演習2-6
+//怴柧夝C尵岅擖栧墘廗2-6
 //int main()
 //{
 //	int a;
-//	printf("身長を入力せよ:"); scanf("%d", &a);
+//	printf("恎挿傪擖椡偣傛:"); scanf("%d", &a);
 //	double b=(a - 100) * 0.9;
-//	printf("標準体重は%3.1fです。\n", b);
+//	printf("昗弨懱廳偼%3.1f偱偡丅\n", b);
 //    return 0;
-//}}
+//}
+//怴柧夝C尵岅擖栧墘廗3-1
+//int main()
+//{
+//	int a, b = 0;
+//	puts("擇偮偺惍悢傪擖椡偣傛丅");
+//	printf("惍悢A丗"); scanf("%d", &a);
+//	printf("惍悢B丗"); scanf("%d", &b);
+//	if (a % b)
+//	{
+//		printf("B偼A偺栺悢偱偼偁傝傑偣傫丅\n");
+//	}
+//	else
+//	{
+//		printf("B偼A偺栺悢偱偡丅\n");
+//	}
+//	return 0;
+//}
+//怴柧夝C尵岅擖栧墘廗3-2
+//int main()
+//{
+//	int no;
+//	printf("惍悢傪擖椡偣傛:");
+//	scanf("%d", &no);
+//	if (no == 0)
+//	{
+//		puts("偦偺悢偼0偱偡丅\n");
+//	}
+//	else if (no > 0)
+//	{
+//		puts("偦偺悢偼惓偱偡丅\n");
+//	}
+//	else if (no < 0)//嵟屻偼else偺応崌,屻傠偵懕偔(幃)偼梫傜側偄丅扐偟,嵟屻傪else if偵偟偨応崌,慜偲摨偠偔(幃)偑昁梫偵側傞
+//	{
+//		puts("偦偺悢偼晧偱偡丅\n");
+//	}
+//	return 0;
+//}
+//怴柧夝C尵岅擖栧墘廗3-3
+//int main()
+//{
+//	int x = 0;
+//	printf("惍悢傪擖椡偣傛:");
+//	scanf("%d", &x);
+//	if (x >= 0)
+//	{
+//		printf("愨懳抣偼%d偱偡丅\n", x);
+//	}
+//	else
+//	{
+//		printf("愨懳抣偼%d偱偡丅\n", -x);
+//	}
+//	return 0;
+//}
+//怴柧夝C尵岅擖栧墘廗3-4
+//int main()
+//{
+//	int a, b = 0;
+//	puts("擇偮偺惍悢傪擖椡偣傛丅");
+//	printf("惍悢A丗"); scanf("%d", &a);
+//	printf("惍悢B丗"); scanf("%d", &b);
+//	if (a == b)
+//	{
+//		printf("A偲B偼摍偟偄偱偡丅\n");
+//	}
+//	else if (a > b)
+//	{
+//		printf("A偼B傛傝戝偒偄偱偡丅\n");
+//	}
+//	else
+//	{
+//		printf("A偼B傛傝彫偝偄偱偡丅\n");
+//	}
+//	return 0;
+//}
+//怴柧夝C尵岅擖栧墘廗3-5
+//int main()
+//{
+//	int a, b = 0;
+//	scanf("%d%d", &a,&b);
+//	puts("摍壙墘嶼巕'=='");
+//	if (a == b)
+//	{
+//		puts("敾抐寢壥:1\n");
+//	}
+//	else
+//	{
+//		puts("敾抐寢壥:0\n");
+//	}
+//	puts("娭學墘嶼巕'!='");
+//	if (a != b)
+//	{
+//		puts("敾抐寢壥:1\n");
+//	}
+//	else
+//	{
+//		puts("敾抐寢壥:0\n");
+//	}
+//	return 0;
+//}
+//怴柧夝C尵岅擖栧墘廗3-6
+//int main()
+//{
+//	int a, b, c = 0; 
+//	puts("嶰偮偺惍悢傪擖椡偣傛丅");
+//	scanf("%d%d%d", &a, &b, &c);
+//	int min = a;
+//	if (b < min)
+//	{
+//		min = b;
+//	}
+//	if (c < min)
+//	{
+//		min = c;
+//	}
+//	printf("偦傟傜偺嵟彫抣偼%d偱偡丅\n", min);
+//	return 0;
+//}
+//怴柧夝C尵岅擖栧墘廗3-7
+//int main()
+//{
+//	int n1, n2, n3, n4 = 0;
+//	puts("巐偮偺惍悢傪擖椡偣傛丅");
+//	scanf("%d%d%d%d", &n1, &n2, &n3, &n4);
+//	int max = n1;
+//	if (n2 > max)
+//	{
+//		max = n2;
+//	}
+//	if (n3 > max)
+//	{
+//		max = n3;
+//	}
+//	if (n4 > max)
+//	{
+//		max = n4;
+//	}
+//	printf("偦傟傜偺嵟戝抣偼%d偱偡丅\n", max);
+//	return 0;
+//}
+//怴柧夝C尵岅擖栧墘廗3-8
+//int main()
+//{
+//	int n1, n2 = 0;
+//	puts("擇偮偺惍悢傪擖椡偣傛丅");
+//	printf("惍悢1丗"); scanf("%d", &n1);
+//	printf("惍悢2丗"); scanf("%d", &n2);
+//	if (n1 > n2)
+//	{
+//		printf("偦傟傜偺嵎偼%d偱偡丅\n", n1 - n2);
+//	}
+//	else
+//	{
+//		printf("偦傟傜偺嵎偼%d偱偡丅\n", n2 - n1);
+//	}
+//	return 0;
+//}
+//怴柧夝C尵岅擖栧墘廗3-9
+//int main()
+//{
+//	int a, b, c = 0; 
+//	puts("嶰偮偺惍悢傪擖椡偣傛丅");
+//	scanf("%d%d%d", &a, &b, &c);
+//	int min = a < b ? a : b;
+//	min = min < c ? min : c;
+//	printf("偦傟傜偺嵟彫抣偼%d偱偡丅\n", min);
+//	return 0;
+//}
+//怴柧夝C尵岅擖栧墘廗3-10
+//int main()
+//{
+//	int a, b, c = 0;
+//	puts("嶰偮偺惍悢傪擖椡偣傛丅");
+//	printf("惍悢A丗"); scanf("%d", &a);
+//	printf("惍悢B丗"); scanf("%d", &b);
+//	printf("惍悢C丗"); scanf("%d", &c);
+//	if (a == b && b == c)
+//	{
+//		printf("嶰偮偺抣偼摍偟偄偱偡丅\n");
+//	}
+//	else if (a == b || a == c || b == c)
+//	{
+//		printf("擇偮偺抣偼摍偟偄偱偡丅\n");
+//	}
+//	else
+//	{
+//		printf("嶰偮偺抣偼堎側傝傑偡丅\n");
+//	}
+//	return 0;
+//}
+//怴柧夝C尵岅擖栧墘廗3-11
+//int main()
+//{
+//	int a, b = 0;
+//	puts("擇偮偺惍悢傪擖椡偣傛丅");
+//	printf("惍悢A丗"); scanf("%d", &b);
+//	printf("惍悢B丗"); scanf("%d", &a);
+//	if ((a > b && a - b <= 10) || (b > a && b - a <= 10))
+//	{
+//		printf("偦傟傜偺嵎偼10埲壓偱偡丅\n");
+//	}
+//	else
+//	{
+//		printf("偦傟傜偺嵎偼11埲忋偱偡丅\n");
+//	}
+//	return 0;
+//}
+//怴柧夝C尵岅擖栧墘廗3-12
+//int main()
+//{
+//	int n;
+//	printf("惍悢傪擖椡偣傛:");
+//	scanf("%d", &n);
+//	switch (n % 2)
+//	{
+//	case 1:
+//		puts("偦偺悢偼婏悢偱偡丅\n");
+//		break;
+//	default:
+//		puts("偦偺悢偼嬼悢偱偡丅\n");
+//		break;
+//	}
+//	return 0;
+//}
+//怴柧夝C尵岅擖栧墘廗3-13
+//int main()
+//{
+//	int month;
+//	printf("壗寧偱偡偐:");
+//	scanf("%d", &month);
+//	switch (month)
+//	{
+//	case 1:
+//	case 2:
+//		printf("%d寧偼搤偱偡丅\n", month);
+//		break;
+//	case 3:
+//	case 4:
+//	case 5:
+//		printf("%d寧偼弔偱偡丅\n", month);
+//		break;
+//	case 6:
+//	case 7:
+//	case 8:
+//		printf("%d寧偼壞偱偡丅\n", month);
+//		break;
+//	case 9:
+//	case 10:
+//	case 11:
+//		printf("%d寧偼廐偱偡丅\n", month);
+//		break;
+//	case 12:
+//		printf("%d寧偼搤偱偡丅\n", month);
+//		break;
+//	default:
+//		printf("%d寧偼偁傝傑偣傫傛!!\n", month);
+//		break;
+//	}
+//	return 0;
+//}
