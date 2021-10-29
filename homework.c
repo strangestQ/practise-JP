@@ -94,7 +94,6 @@
 //	printf("整数a:"); scanf("%d", &a);
 //	printf("整数b:"); scanf("%d", &b);
 //	printf("それらの和は%dで積は%dです。\n",a+b,a*b);
-//
 //	return 0;
 //}
 //新明解C言語入門演習2-3
@@ -396,3 +395,287 @@
 //	}
 //	return 0;
 //}
+//新明解C言語入門演習4-1
+//int main()
+//{
+//	int no;
+//	int retry;
+//	do
+//	{
+//		printf("整数を入力せよ:");
+//		scanf("%d", &no);
+//		if (no == 0)
+//		{
+//			puts("その数は0です。");
+//		}
+//		else if (no > 0)
+//		{
+//			puts("その数は正です。");
+//		}
+//		else
+//		{
+//			puts("その数は負です。");
+//		}
+//		printf("続きますか:YES【0】/NO【9】");
+//		scanf("%d", &retry);
+//	} while (retry == 0);
+//	return 0;
+//}
+//新明解C言語入門演習4-2
+//int main()
+//{
+//	int a, b, n = 0;
+//	int sum = 0;
+//	puts("二つの整数を入力せよ。");
+//	printf("整数a："); scanf("%d", &a);
+//	printf("整数b："); scanf("%d", &b);
+//	if (a <= b)
+//	{
+//		do
+//		{
+//			sum += a;
+//			//a = a + 1;
+//			//n = n + 1;			
+//			a++;
+//			n++;
+//		} while (a <= b);//'=='はダメ!
+//		printf("%d以上%d以下の全整数の和は%dです。\n", a - n, b, sum);
+//	}
+//	else
+//	{
+//		do
+//		{
+//			sum += b;
+//			//b = b + 1;
+//			//n = n + 1;
+//			b++;
+//			n++;
+//		} while (a >= b);//'=='はダメ!
+//		printf("%d以上%d以下の全整数の和は%dです。\n", b - n, a, sum);
+//	}
+//	return 0;
+//}
+//int main()
+//{
+//    int a, b;
+//    int max, min;
+//    int sum = 0;
+//    int count = 0;
+//    puts("二つの整数を入力してください。");
+//    printf("整数a:"); scanf("%d", &a);
+//    printf("整数b:"); scanf("%d", &b);
+//    if (a > b) 
+//    {
+//        max = a;
+//        min = b;
+//    }
+//    else 
+//    {
+//        max = b;
+//        min = a;
+//    }
+//    do 
+//    {
+//        sum += min;
+//        min++;
+//        count++;
+//    } while (min <= max);//上と同じく,'=='ダメです
+//    //min==maxは間違えた書き方,循環は繰り返せず,一回で終了する
+//    //循環を繰り返したい場合,判断式の結果を　真(非0)　にしなければならない！！！
+//    printf("%d以上%d以下の全整数の和は%dです。\n", min - count, max, sum);
+//    return 0;
+//}
+//新明解C言語入門演習4-3
+//int main()
+//{
+//	int no;
+//	printf("正の整数を入力せよ:");
+//	scanf("%d", &no);
+//	while (no >= 0)
+//	{
+//		printf("%d ", no);
+//		if(no == 0)
+//		{
+//			printf("\n");
+//		}
+//		no--;
+//	}
+//	return 0;
+//}
+//新明解C言語入門演習4-4
+//int main()
+//{
+//	int no;
+//	printf("正の整数を入力せよ:");
+//	scanf("%d", &no);
+//	while (no >= 1)
+//	{
+//		printf("%d ", no--);
+//		if (no == 0)
+//		{
+//			printf("\n");
+//		}
+//	}
+//	return 0;
+//}
+//新明解C言語入門演習4-5
+//int main()
+//{
+//	int no;
+//	printf("正の整数を入力せよ:");
+//	scanf("%d", &no);
+//	int i = 1;
+//	if (no > 0)
+//	{
+//		while (i <= no)
+//		{
+//			printf("%d ", i++);
+//		}
+//		printf("\n");
+//	}
+//	return 0;
+//}
+//新明解C言語入門演習4-6
+//int main()
+//{
+//	int no;
+//	printf("正の整数を入力せよ:");
+//	scanf("%d", &no);
+//	int i = 2;
+//	while (i <= no)
+//	{
+//		printf("%d ",i);
+//		i += 2;
+//	}
+//	printf("\n");
+//	return 0;
+//}
+//新明解C言語入門演習4-7
+//int main()
+//{
+//	int no;
+//	printf("正の整数を入力せよ:");
+//	scanf("%d", &no);
+//	int i = 2;
+//	while (i <= no)
+//	{
+//		printf("%d ", i);
+//		i *= 2;
+//	}
+//	printf("\n");
+//	return 0;
+//}
+//新明解C言語入門演習4-8
+//int main()
+//{
+//	int no;
+//	printf("正の整数:");
+//	scanf("%d", &no);
+//	if (no >= 1)
+//	{
+//		while (no-- > 0)
+//		{
+//			putchar('*');
+//		}
+//		putchar('\n');
+//	}
+//	return 0;
+//}
+//新明解C言語入門演習4-9
+//int main()
+//{
+//	int no;
+//	printf("正の整数:");
+//	scanf("%d", &no);
+//	if (no > 0)
+//	{
+//		while (no-- > 0)
+//		{
+//			if (no % 2)
+//			{
+//				putchar('-');
+//			}
+//			else
+//			{
+//				putchar('+');
+//			}
+//		}
+//		putchar('\n');
+//	}
+//	return 0;
+//}
+//新明解C言語入門演習4-10
+//int main()
+//{
+//	int no;
+//	printf("正の整数:");
+//	scanf("%d", &no);
+//	while (no-- > 0)
+//	{
+//		putchar('*');
+//		if (no > 0)
+//		{
+//			putchar('\n');
+//		}
+//	}
+//	return 0;
+//}
+//新明解C言語入門演習4-11
+//int main()
+//{
+//	int no1 = 0;
+//	do
+//	{
+//		printf("正の整数を入力せよ:");
+//		scanf("%d", &no1);
+//		if (no1 <= 0)
+//		{
+//			puts("\a正でない数を入力しないでください。");
+//		}
+//	} while (no1 <= 0);
+// 	printf("%dを逆から読むと", no1);
+//	int no2 = no1;
+//	while (no2 > 0)
+//	{
+//		printf("%d", no2 % 10);
+//		no2 /= 10;
+//	}
+//	puts("です。");
+//	return 0;
+//}
+//新明解C言語入門演習4-12
+//int main()
+//{
+//	int no = 0;
+//	do
+//	{
+//		printf("正の整数を入力せよ:");
+//		scanf("%d", &no);
+//		if (no <= 0)
+//		{
+//			puts("\a正でない数を入力しないでください。");
+//		}
+//	} while (no <= 0);
+//	printf("%dは",no);
+//	int count = 0;
+//	while (no > 0)
+//	{
+//		no /= 10;
+//		count++;
+//	}
+//	printf("%d桁です。", count);
+//	return 0;
+//}
+//新明解C言語入門演習4-13
+//新明解C言語入門演習4-14
+//新明解C言語入門演習4-15
+//新明解C言語入門演習4-16
+//新明解C言語入門演習4-17
+//新明解C言語入門演習4-18
+//新明解C言語入門演習4-19
+//新明解C言語入門演習4-20
+//新明解C言語入門演習4-21
+//新明解C言語入門演習4-22
+//新明解C言語入門演習4-23
+//新明解C言語入門演習4-24
+//新明解C言語入門演習4-25
