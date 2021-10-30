@@ -133,7 +133,7 @@
 //	int a;
 //	printf("身長を入力せよ:"); scanf("%d", &a);
 //	double b=(a - 100) * 0.9;
-//	printf("標準体重は%3.1fです。\n", b);
+//	printf("標準体重は%.1fです。\n", b);
 //    return 0;
 //}
 //新明解C言語入門演習3-1
@@ -667,15 +667,264 @@
 //	return 0;
 //}
 //新明解C言語入門演習4-13
+//int main()
+//{
+//	int n;
+//	printf("nの値は:");
+//	scanf("%d", &n);
+//	int sum = 0;
+//	for (int i = 1; i <= n; i++)
+//	{
+//		sum += i;
+//	}
+//	printf("1から%dまでの総和は%dです。\n", n, sum);
+//	return 0;
+//}
 //新明解C言語入門演習4-14
+//int main()
+//{
+//	int n;
+//	printf("正の整数を入力せよ:");
+//	scanf("%d", &n);
+//	for (int i = 1; i <= n; i++)
+//	{
+//		printf("%d", i % 10);
+//	}
+//	return 0;
+//}
 //新明解C言語入門演習4-15
+//int main()
+//{
+//	int len1, len2, n;
+//	printf("何cmから:"); scanf("%d", &len1);
+//	printf("何cmまで:"); scanf("%d", &len2);
+//	printf("何cmごと:"); scanf("%d", &n);
+//	for (int i = len1; i <= len2; i += n)
+//	{
+//		double weight = (i - 100) * 0.9;
+//		printf("%dcm ", i);
+//		printf("%.2fkg\n", weight);
+//	}
+//	return 0;
+//}
 //新明解C言語入門演習4-16
+//int main()
+//{
+//	int n;
+//	printf("整数値:");
+//	scanf("%d", &n);
+//	for (int i = 1; i <= n; i += 2)
+//	{
+//		printf("%d ", i);
+//	}
+//	return 0;
+//}
 //新明解C言語入門演習4-17
+//int main()
+//{
+//	int n;
+//	printf("nの値:");
+//	scanf("%d", &n);
+//	for (int i = 1; i <= n; i++)
+//	{
+//		printf("%dの2乗は%d\n", i, i * i);
+//	}
+//	return 0;
+//}
 //新明解C言語入門演習4-18
+//int main()
+//{
+//	int n;
+//	printf("何個*を表示しますか:");
+//	scanf("%d", &n);
+//	for (int i = 1; i <= n; i++)
+//	{
+//		putchar('*');
+//		if (i % 5 == 0)
+//		{
+//			putchar('\n');
+//		}
+//	}
+//	return 0;
+//}
 //新明解C言語入門演習4-19
+//int main()
+//{
+//	int n;
+//	printf("整数値:");
+//	scanf("%d", &n);
+//	int count = 0;
+//	for (int i = 1; i <= n; i++)
+//	{
+//		if (n % i == 0)
+//		{
+//			printf("%d\n", i);
+//			count++;
+//		}
+//	}
+//	printf("約数は%d個です。", count);
+//	return 0;
+//}
 //新明解C言語入門演習4-20
+//int main()
+//{
+//	int i, j;
+//	do
+//	{
+//		printf("   |");
+//		for (i = 1; i <= 9; i++)
+//		{
+//			printf("%3d", i);
+//		}
+//	} while (i <= 9);
+//	putchar('\n');
+//	printf("---+---------------------------\n");//自動入力する要求はされていません
+//	//もし自動入力にする場合:
+//	//int n = 0;
+//	//do
+//	//{
+//	//	++n;
+//	//	if (n == 4)
+//	//	{
+//	//		putchar('+');
+//	//	}
+//	//	else
+//	//	{
+//	//		putchar('-');
+//	//	}
+//	//} while (n < (i * 3) + 1);
+//	//putchar('\n');
+//	for (i = 1; i <= 9; i++)
+//	{
+//		printf("%d  |", i);
+//		for (int j = 1; j <= 9; j++)
+//		{
+//			printf("%3d",i*j);
+//		}
+//		putchar('\n');
+//	}
+//	return 0;
+//}
 //新明解C言語入門演習4-21
+//int main()
+//{
+//	int n;
+//	printf("正方形を作ります。\n");
+//	printf("何段ですか:");
+//	scanf("%d", &n);
+//	for (int i = 1; i <= n; i++)
+//	{
+//		for (int i = 1; i <= n; i++)
+//		{
+//			putchar('*');
+//		}
+//		putchar('\n');
+//	}
+//	return 0;
+//}
 //新明解C言語入門演習4-22
+//int main()
+//{
+//	int a, b;
+//	int height, width;
+//	printf("横長の長方形を作ります。\n");
+//	printf("一辺(その1):"); scanf("%d", &a);
+//	printf("一辺(その2):"); scanf("%d", &b);
+//	if (a <= b)
+//	{
+//		height = a;
+//		width = b;
+//	}
+//	else 
+//	{
+//		height = b;
+//		width = a;
+//	}
+//	for (int i = 1; i <= height; i++)
+//	{
+//		for (int j = 1; j <= width; j++)
+//		{
+//			putchar('*');
+//		}
+//		putchar('\n');
+//	}
+//	return 0;
+//}
 //新明解C言語入門演習4-23
+//int main()
+//{
+//	int len;
+//	puts("左上直角二等辺三角形を表示します。");
+//	printf("短辺:"); scanf("%d", &len);
+//	for (int i = 1; i <= len; i++)
+//	{
+//		for (int j = len; j >= i; j--)
+//		{
+//			putchar('*');
+//		}
+//		putchar('\n');
+//	}
+//	return 0;
+//}
+//新明解C言語入門演習4-23-2
+// int main()
+//{
+//int len;
+//puts("右上直角二等辺三角形を表示します。");
+//printf("短辺:"); scanf("%d", &len);
+//for (int i = 1; i <= len; i++)
+//{
+//	for (int j = 1; j <= i - 1; j++)
+// //または上のほう:　　　for(int j = len; j >= len + 1; j--)
+// //そしたら下のほうも:  for(int j = len; j >= i; j--)      
+//	{
+//		putchar(' ');
+//	}
+//	for (int j = 0; j <= len - i; j++)
+//	{
+//		putchar('*');
+//	}
+//	putchar('\n');
+//}
+//return 0;
+//}
 //新明解C言語入門演習4-24
+//int main()
+//{
+//	int n;
+//	printf("ピラミッドを作ります。\n");
+//	printf("何段ですか:"); scanf("%d", &n);
+//	for (int i = 1; i <= n; i++)
+//	{
+//		for(int j = n - i;j > 0;j--)
+//		{
+//			putchar(' ');
+//		}
+//		for (int j = 0; j < ((i - 1) * 2) + 1; j++)
+//		{
+//			putchar('*');
+//		}
+//		putchar('\n');
+//	}
+//	return 0;
+//}
 //新明解C言語入門演習4-25
+//int main()
+//{
+//	int n;
+//	printf("下向き数字ピラミッドを作ります。\n");
+//	printf("何段ですか:"); scanf("%d", &n);
+//	for (int i = 1; i <= n; i++)
+//	{
+//		for (int j = 1; j < i; j++)
+//		{
+//			putchar(' ');
+//		}
+//		for (int j = 1; j <= ((n - i) * 2) + 1; j++)
+//		{
+//			printf("%d",i%10);
+//		}
+//			putchar('\n');
+//	}
+//	return 0;
+//}
