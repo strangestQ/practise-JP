@@ -224,11 +224,87 @@
 //	return 0;
 //}
 //新明解C言語入門演習7-7
-
+//int main() 
+//{
+//    float a = 0;
+//    double b = 0;
+//    long double c = 0;
+//    printf("float aを入力してください　　　：");    scanf("%f", &a);
+//    printf("double bを入力してください　　 ：");    scanf("%lf", &b);
+//    printf("long double cを入力してください：");    scanf("%lf", &c);
+//    printf("a = %f\n", a);
+//    printf("b = %lf\n", b);
+//    printf("c = %lf\n", c);
+//    return 0;
+//}
 //新明解C言語入門演習7-8
-
+//int main() 
+//{
+//    printf("%u\n", sizeof(float));
+//    printf("%u\n", sizeof(double));
+//    printf("%u\n", sizeof(long double));
+//    return 0;
+//}
 //新明解C言語入門演習7-9
-
+//#include <math.h>
+//
+//int main() 
+//{
+//    double area = 0;
+//    printf("正方形の面積を入力してください："); scanf("%lf", &area);
+//    double len = sqrt(area);
+//    printf("その面積をもつ正方形の一辺の長さは%lfです。", len);
+//    return 0;
+//}
 //新明解C言語入門演習7-10
-
+//int main() 
+//{
+//    int i = 0;
+//    float x = 0;
+//    for (i = 0, x = 0.0; i <= 100; i++, x += 0.01) 
+//    {
+//        printf("x = %f  ", x);  printf("x = %f\n", i / 100.0);
+//    }
+//    return 0;
+//}
 //新明解C言語入門演習7-11
+//int main()
+//{
+//	float x = 0, sum = 0;
+//	for (float x = 0; x <= 1.0; x += 0.01)
+//	{
+//		sum += x;
+//		printf("x = %f ", x);
+//		printf("sum = %f\n", sum);	
+//	}
+//	return 0;
+//}
+//int main()
+//{
+//	float x = 0, sum = 0;
+//  int i = 0;
+//	for (i = 0; i <= 100; i++)
+//	{
+//		x = i / 100.0;
+//		sum += x;
+//		printf("x = %f ", x);
+//		printf("sum = %f\n", sum);
+//	}
+//	return 0;
+//}
+//結果だけ比べて見る
+//int main() 
+//{
+//    int i;
+//    float x;
+//    float sum1 = 0, sum2 = 0;
+//
+//    for (i = 0, x = 0.0; i <= 100; i++, x += 0.01) 
+//    {
+//        sum1 += x;   
+//        sum2 += (i / 100.0);
+//    }
+//    printf("小数制御の累計は%f\n", sum1);
+//    printf("整数制御の累計は%f\n", sum2);
+//    return 0;
+//}
