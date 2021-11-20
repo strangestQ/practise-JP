@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 
-#include<stdio.h>
+#include <stdio.h>
 
 //V–¾‰ğCŒ¾Œê“ü–å‰‰K7-1
 //int main()
@@ -211,7 +211,7 @@
 //	return 0;
 //}
 //V–¾‰ğCŒ¾Œê“ü–å‰‰K7-6
-//#include<limits.h>
+//#include <limits.h>
 //
 //int main()
 //{
