@@ -128,11 +128,105 @@
 //	return 0;
 //}
 //新明解C言語入門演習8-6
-
+//int main()
+//{
+//	int num;
+//	printf("整数を入力せよ:"); scanf("%d", &num);
+//	int mul = 1;
+//	int i = 0;
+//	for (i = 1; i <= num; i++)
+//	{
+//		mul *= i;
+//	}
+//	printf("%dの階乗は%dです。\n", num, mul);
+//	return 0;
+//}
 //新明解C言語入門演習8-7
-
+//int combination(int n, int r) 
+//{
+//	if (n == r || r == 0)
+//	{
+//		return 1;
+//	}
+//	else
+//	{
+//		return combination(n - 1, r - 1) + combination(n - 1, r);
+//	}
+//}
+//int main() 
+//{
+//	int n, r;
+//	printf("異なるn個の整数からr個の整数を取り出す組み合わせの数のnCrを求めます\n");
+//	printf("ｎ：");  scanf("%d", &n);
+//	printf("ｒ：");  scanf("%d", &r);
+//	printf("その組み合わせの数は%d個です\n",combination(n, r));
+//	return 0;
+//}
 //新明解C言語入門演習8-8
-
+//int gcd(int x, int y)
+//{
+//	//循環の書き方
+//	//int i = 0;
+//	//while (i = x % y)
+//	//{
+//	//	x = y;
+//	//	y = i;
+//	//}
+//	//return y;
+//	//再帰関数の書き方
+//	if (x < y)
+//	{
+//		x ^= y;
+//		y ^= x;
+//		x ^= y;
+//	}
+//	return !(x % y) ? y : gcd(y, x % y);
+//}
+//int main()
+//{
+//	int x, y;
+//	printf("二つの整数を入力せよ："); scanf("%d %d", &x, &y);
+//	printf("%dと%dの最大公約数は%dです。\n", x, y, gcd(x, y));
+//	return 0;
+//}
 //新明解C言語入門演習8-9
-
+//int main()
+//{
+//	int line = 0;
+//	int ch;
+//	while ((ch = getchar()) != EOF)
+//	{
+//		if (ch == '\n')
+//		{
+//			line++;
+//		}
+//	}
+//	printf("入力した行数は%d行です。\n", line);
+//	return 0;
+//}
 //新明解C言語入門演習8-10
+//int main()
+//{
+//	int ch;
+//	int cnt[10] = { 0 };
+//	while ((ch = getchar()) != EOF)
+//	{
+//		if ((ch >= '0' && ch <= '9'))
+//		{
+//			cnt[ch - '0']++;
+//		}
+//	}
+//	int i = 0;
+//	printf("数字文字の出現回数\n");
+//	for (i = 0; i < 10; i++)
+//	{
+//		printf("'%d' : ", i);
+//		int j = 0;
+//		for (j = cnt[i]; j > 0; j--)
+//		{
+//			putchar('*');
+//		}
+//		putchar('\n');
+//	}
+//	return 0;
+//}
