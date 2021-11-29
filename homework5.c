@@ -270,11 +270,208 @@
 //	return 0;
 //}
 //新明解C言語入門演習10-1
-
+//void adjust_point(int* n)
+//{
+//	if (*n < 0)
+//		*n = 0;
+//	else if (*n > 100)
+//		*n = 100;
+//}
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d", &n);
+//	adjust_point(&n);
+//	printf("更新後：n = %d\n", n);
+//	return 0;
+//}
 //新明解C言語入門演習10-2
-
+//void decrement_date(int* y, int* m, int* d)
+//{
+//	*d -= 1;
+//	if (*d < 1)
+//	{
+//		*m -= 1;
+//		if (*m == 4 || *m == 6 || *m == 9 || *m == 11)
+//		{
+//			*d = 30;
+//		}
+//		else if (*m == 2)
+//		{
+//			if ((*y % 4 == 0 && *y % 100 != 0) || (*y % 400 == 0))
+//				*d = 29;
+//			else
+//				*d = 28;
+//		}
+//		else if (*m < 1)
+//		{
+//			*m = 12;
+//			*d = 31;			
+//			*y -= 1;
+//		}
+//		else
+//			*d = 31;
+//	}
+//}
+//void increment_date(int* y, int* m, int* d)
+//{
+//	*d += 1;
+//	if ((*m == 4 || *m == 6 || *m == 9 || *m == 11) && *d > 30)
+//	{
+//		*m += 1;
+//		*d = 1;
+//	}
+//	else if (*m == 2)
+//	{
+//		if (((*y % 4 == 0 && *y % 100 != 0) || (*y % 400 == 0)) && *d > 29)
+//		{
+//			*m += 1;
+//			*d = 1;
+//		}
+//		else
+//		{
+//			*m += 1;
+//			*d = 1;
+//		}
+//	}
+//	else if (*m == 12 && *d > 31)
+//	{
+//		*y += 1;
+//		*m = 1;
+//		*d = 1;
+//	}
+//	else
+//	{
+//		*m += 1;
+//		*d = 1;
+//	}
+//}
+//int main()
+//{
+//	int y = 0, m = 0, d = 0;
+//	put:
+//	do
+//	{
+//		printf("正しい日付を年、月、日の順番に入力せよ："); scanf("%d %d %d", &y, &m, &d);
+//		if ((m == 4 || m == 6 || m == 9 || m == 11) && d > 30)
+//		{
+//			goto put;
+//		}
+//		else if (m == 2)
+//		{
+//			if ((y % 4 == 0 && y % 100 != 0) || (y % 400 == 0))
+//			{
+//				if (d > 29)
+//					goto put;
+//			}
+//			else
+//			{
+//				if (d > 28)
+//					goto put;
+//			}
+//		}
+//		else
+//			if (d > 31)
+//				goto put;
+//	} while (y < 1 && m < 1 && m>12 && d < 1 && d>31);
+//	printf("日付は： %d 年 %d 月 %d 日\n", y, m, d);
+//	int sw = 0;
+//	int y1 = y, m1 = m, d1 = d, y2 = y, m2 = m, d2 = d;
+//	do
+//	{
+//		printf("表示する日付は：前の日 -- 1 次の日 -- 2 終了 -- 0\n"); scanf("%d", &sw);
+//		switch (sw)
+//		{
+//		case 0:
+//			break;
+//		case 1:
+//			decrement_date(&y1, &m1, &d1);
+//			printf("前の日の日付は： %d 年 %d 月 %d 日です。\n\n", y1, m1, d1);
+//			y1 = y, m1 = m, d1 = d;
+//			break;
+//		case 2:
+//			increment_date(&y2, &m2, &d2);
+//			printf("次の日の日付は： %d 年 %d 月 %d 日です。\n\n", y2, m2, d2);
+//			y2 = y, m2 = m, d2 = d;
+//			break;
+//		default:
+//			printf("0,1又は2を入力してください。\n\n");
+//			break;
+//		}
+//		
+//	} while (sw);
+//	return 0;
+//}
 //新明解C言語入門演習10-3
-
+//void swap(int* x, int* y)
+//{
+//	int tmp = *x;
+//	*x = *y;
+//	*y = tmp;
+//}
+//void sort3(int* n1, int* n2, int* n3)
+//{
+//	if (*n1 > *n2)
+//		swap(n1, n2);
+//	if (*n1 > *n3)
+//		swap(n1, n3);
+//	if (*n2 > *n3)
+//		swap(n2, n3);
+//}
+//int main()
+//{
+//	int a, b, c;
+//	puts("三つの整数を入力せよ。");
+//	printf("整数A："); scanf("%d", &a);
+//	printf("整数B："); scanf("%d", &b);
+//	printf("整数C："); scanf("%d", &c);
+//	sort3(&a, &b, &c);
+//	puts("昇順にソートしました。");
+//	printf("整数Aは%dです。\n", a);
+//	printf("整数Bは%dです。\n", b);
+//	printf("整数Cは%dです。\n", c);
+//	return 0;
+//}
 //新明解C言語入門演習10-4
-
+//void set_idx(int* v, int n)
+//{
+//	for (int i = 0; i < n; i++)
+//	{
+//		v[i] = i;
+//	}
+//}
+//int main()
+//{
+//	int arr[10] = { 0 };
+//	set_idx(arr, 10);
+//	for (int i = 0; i < 10; i++)
+//	{
+//		if (i == 0)
+//			printf("arr = { %d", arr[i]);
+//		else if (i == 9)
+//			printf(", %d }", arr[i]);
+//		else
+//			printf(", %d", arr[i]);
+//	}
+//	putchar('\n');
+//	return 0;
+//}
 //新明解C言語入門演習10-5
+//void ary_set(int v[], int n, int val)
+//{
+//	for (int i = 0; i < n; i++)
+//	{
+//		v[i] = val;
+//	}
+//}
+//int main()
+//{
+//	int a[] = { 1,2,3,4,5 };
+//	ary_set(&a[2], 2, 99);//結果は｛1,2,99,99,5｝
+//	//代入したのがa[2]から始まる2個の元素のみでした
+//	for (int i = 0; i < 5; i++)
+//	{
+//		printf("a[%d] = %d\n", i, a[i]);
+//	}
+//	return 0;
+//}
