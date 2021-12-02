@@ -192,11 +192,192 @@
 //	return 0;
 //}
 //新明解C言語入門演習11-8
-
+//int str_chnum(const char* s, int c)
+//{
+//	int count = 0;
+//	while (*s)
+//	{
+//		if (*s++ == c)
+//			count++;
+//	}
+//	return count;
+//}
+//int main()
+//{
+//	char s[20];
+//	printf("文字列を入力："); scanf("%s",s);
+//	printf("文字列の中に文字cは%d個あります。\n", str_chnum(s, 'c'));
+//	return 0;
+//}
 //新明解C言語入門演習11-9
-
+//char* str_chr(const char* s, int c)
+//{
+//	do
+//	{
+//		if (*s == c)
+//			return s;
+//	} while (*s++);
+//	return NULL;
+//}
+//int main()
+//{
+//	char s[20];
+//	printf("文字列を入力："); scanf("%s", s); getchar();
+//	char c = getchar();
+//	printf("文字%cはアドレス:%p にあります。\n",c, str_chr(s, 'c'));
+//	return 0;
+//}
 //新明解C言語入門演習11-10
-
+//void str_tupper(char* s)
+//{
+//	while (*s)
+//	{
+//		*s++ = toupper(*s);
+//	}
+//}
+//void str_tolower(char* s)
+//{
+//	while (*s)
+//	{
+//		*s++ = tolower(*s);
+//	}
+//}
+//int main()
+//{
+//	char str[128];
+//	printf("文字列を入力せよ："); scanf("%s", str);
+//	str_tupper(str);
+//	printf("大文字：%s\n", str);
+//	str_tolower(str);
+//	printf("小文字：%s\n", str);
+//	return 0;
+//}
 //新明解C言語入門演習11-11
-
+// #include <ctype.h>
+// 
+//void del_digit(char* str)
+//{
+//	int i = 0, j = 0;
+//	for (i = 0; i < strlen(str); i++)
+//	{
+//		if (!isalpha(*(str + i)))
+//			//isalpha() - 一つの文字が英字かどうか
+//			//もし引数は英字なら０以外の値を返し、英字じゃなければ０を返します
+//			//必要のヘッダは： <ctype.h>
+//		{
+//			for (j = i; j < strlen(str); j++)
+//			{
+//				*(str + j) = *(str + j + 1);
+//			}
+//			i--;
+//		}
+//	}
+//}
+//int main()
+//{
+//	char str[20];
+//	printf("文字列を入力せよ："); scanf("%s", str);
+//	del_digit(str);
+//	printf("数字文字を削除したあとの文字列：%s\n", str);
+//	return 0;
+//}
 //新明解C言語入門演習11-12
+//#include <stdlib.h>
+//
+//int my_atoi(const char* str)
+//{
+//    int num = 0, sign = 1;
+//     if (*str == '-') 
+//    {
+//        sign = -1;
+//        *str++;
+//    }
+//    while (1) 
+//    {
+//        num += *str - '0';
+//        *str++;
+//        if (*str < '0') 
+//            break;
+//        num *= 10;
+//    }
+//    return num * sign;
+//}
+//long my_atol(const char* str)
+//{
+//    long num = 0;
+//    int sign = 1;
+//    if (*str == '-')
+//    {
+//        sign = -1;
+//        *str++;
+//    }
+//    while (1)
+//    {
+//        num += *str - '0';
+//        *str++;
+//        if (*str < '0')
+//            break;
+//        num *= 10;
+//    }
+//    return num * sign;
+//}
+//long long my_atoll(const char* str)
+//{
+//    long long num = 0;
+//    int sign = 1;
+//    if (*str == '-')
+//    {
+//        sign = -1;
+//        *str++;
+//    }
+//    while (1)
+//    {
+//        num += *str - '0';
+//        *str++;
+//        if (*str < '0')
+//            break;
+//        num *= 10;
+//    }
+//    return num * sign;
+//}
+//double my_atof(const char* str)
+//{
+//    double num = 0;
+//    int sign = 1;
+//    if (*str == '-')
+//    {
+//        sign = -1;
+//        *str++;
+//    }
+//    while (1)
+//    {
+//        num += *str - '0';
+//        *str++;
+//        if (*str == '\0' || *str == '.')
+//            break;
+//        num *= 10;
+//    }
+//    if (*str == '.')
+//    {
+//        *str++;
+//        double dec = 1;
+//        while (1)
+//        {
+//            num += (*str - '0') / (dec *= 10);
+//            *str++;
+//            if (*str == '\0')
+//                break;
+//        }
+//    }
+//    return num * sign;
+//}
+//int main()
+//{
+//	char str[128];
+//	printf("文字列を入力せよ："); scanf("%s", str);
+//	printf("int型に変換すると：　　　%dです。\n", my_atoi(str));
+//	printf("long型に変換すると：　　 %dです。\n", my_atol(str));
+//	printf("long long型に変換すると：%dです。\n", my_atoll(str));
+//	printf("double型に変換すると：   %lfです。\n", my_atof(str));
+//	return 0;
+//}
