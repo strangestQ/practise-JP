@@ -198,13 +198,186 @@
 //	return 0;
 //}
 //新明解C言語入門演習13-8
-
+//int main()
+//{
+//	FILE* sfp;
+//	FILE* dfp;
+//	char sname[FILENAME_MAX];
+//	char dname[FILENAME_MAX];
+//	printf("コピー元ファイル名："); scanf("%s", &sname);
+//	printf("コピー先ファイル名："); scanf("%s", &dname);
+//	if ((sfp = fopen(sname, "r")) == NULL)
+//		printf("\aコピー元ファイルをオープンできません。\n");
+//	else
+//	{
+//		if ((dfp = fopen(dname, "w")) == NULL)
+//			printf("\aコピー先ファイルをオープンできません。\n");
+//		else
+//		{
+//			int ch;
+//			while ((ch = fgetc(sfp)) != EOF)
+//			{
+//				fputc(ch, dfp);
+//				putchar(ch);
+//			}
+//			fclose(dfp);
+//		}
+//		fclose(sfp);
+//	}
+//	return 0;
+//}
 //新明解C言語入門演習13-9
-
+//int main()
+//{
+//	FILE* sfp;
+//	FILE* dfp;
+//	char sname[FILENAME_MAX];
+//	char dname[FILENAME_MAX];
+//	printf("コピー元ファイル名："); scanf("%s", &sname);
+//	printf("コピー先ファイル名："); scanf("%s", &dname);
+//	if ((sfp = fopen(sname, "r")) == NULL)
+//		printf("\aコピー元ファイルをオープンできません。\n");
+//	else
+//	{
+//		if ((dfp = fopen(dname, "w")) == NULL)
+//			printf("\aコピー先ファイルをオープンできません。\n");
+//		else
+//		{
+//			int ch;
+//			while ((ch = fgetc(sfp)) != EOF)
+//			{
+//				fputc(toupper(ch), dfp);
+//			}
+//			fclose(dfp);
+//		}
+//		fclose(sfp);
+//	}
+//	return 0;
+//}
 //新明解C言語入門演習13-10
-
+//int main()
+//{
+//	FILE* sfp;
+//	FILE* dfp;
+//	char sname[FILENAME_MAX];
+//	char dname[FILENAME_MAX];
+//	printf("コピー元ファイル名："); scanf("%s", &sname);
+//	printf("コピー先ファイル名："); scanf("%s", &dname);
+//	if ((sfp = fopen(sname, "r")) == NULL)
+//		printf("\aコピー元ファイルをオープンできません。\n");
+//	else
+//	{
+//		if ((dfp = fopen(dname, "w")) == NULL)
+//			printf("\aコピー先ファイルをオープンできません。\n");
+//		else
+//		{
+//			int ch;
+//			while ((ch = fgetc(sfp)) != EOF)
+//			{
+//				fputc(tolower(ch), dfp);
+//			}
+//			fclose(dfp);
+//		}
+//		fclose(sfp);
+//	}
+//	return 0;
+//}
 //新明解C言語入門演習13-11
-
+//int main()
+//{
+//	double a[10];
+//	for (int i = 0; i < 10; i++)
+//	{
+//		a[i] = 3.141592653589;
+//	}
+//	FILE* fp;
+//	//char fname[FILENAME_MAX];
+//	//printf("ファイル名："); scanf("%s", &fname);
+//	if ((fp = fopen("date.bin", "wb")) == NULL)
+//		printf("\aファイルをオープンできません。\n");
+//	else
+//	{
+//		fwrite(a, sizeof(double), 10, fp);
+//		fclose(fp);
+//	}
+//	if ((fp = fopen("date.bin", "rb")) == NULL)
+//		printf("\aファイルをオープンできません。\n");
+//	else
+//	{
+//		fread(a, sizeof(double), 10, fp);
+//		for (int i = 0; i < 10; i++)
+//		{
+//			printf("%14.12f\n", a[i]);
+//		}
+//		fclose(fp);
+//	}
+//	return 0;
+//}
 //新明解C言語入門演習13-12
-
+//#include <time.h>
+//
+//char data_file[] = "datetime2.bin";
+//
+//void get_data()
+//{
+//	FILE* fp;
+//	if ((fp = fopen(data_file, "rb")) == NULL)
+//		printf("本プログラムを実行するのは初めてですね。\n");
+//	else
+//	{
+//		int year, month, day, h, m, s;
+//		fscanf(fp, "%d%d%d%d%d%d", &year, &month, &day, &h, &m, &s);
+//		printf("前回は%d年%d月%d日%d時%d分%d秒でした。\n",
+//			year, month, day, h, m, s);
+//		fclose(fp);
+//	}
+//}
+//void put_data()
+//{
+//	FILE* fp;
+//	if ((fp = fopen(data_file, "wb")) == NULL)
+//		printf("\aファイルをオープンできません。\n");
+//	else
+//	{
+//		time_t current = time(NULL);
+//		struct tm* timer = localtime(&current);
+//		fprintf(fp, "%d %d %d %d %d %d \n",
+//			timer->tm_year + 1900, timer->tm_mon + 1, timer->tm_mday,
+//			timer->tm_hour, timer->tm_min, timer->tm_sec);
+//		fclose(fp);
+//	}
+//}
+//int main()
+//{
+//	get_data();
+//	put_data();
+//	return 0;
+//}
 //新明解C言語入門演習13-13
+//int main()
+//{
+//	FILE* sfp;
+//	FILE* dfp;
+//	char sname[FILENAME_MAX];
+//	char dname[FILENAME_MAX];
+//	printf("コピー元ファイル名："); scanf("%s", &sname);
+//	printf("コピー先ファイル名："); scanf("%s", &dname);
+//	if ((sfp = fopen(sname, "rb")) == NULL)
+//		printf("\aコピー元ファイルをオープンできません。\n");
+//	else
+//	{
+//		if ((dfp = fopen(dname, "wb")) == NULL)
+//			printf("\aコピー先ファイルをオープンできません。\n");
+//		else
+//		{
+//			int ch;
+//			while (fread(&ch, sizeof(int), 1, sfp) > 0)
+//			{
+//				fwrite(&ch, sizeof(int), 1, dfp);
+//			}
+//			fclose(dfp);
+//		}
+//		fclose(sfp);
+//	}
+//	return 0;
+//}
